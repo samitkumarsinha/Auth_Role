@@ -1,0 +1,6 @@
+<form [formGroup]="loginform" (submit)="login(loginform.value)">
+    <p>Username<input formControlName="username"></p>
+    <p>Password<input formControlName="password"></p>
+    <p><button type="submit" [disabled]="!loginform.valid">Login</button></p>
+
+</form>
